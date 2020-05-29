@@ -8,17 +8,17 @@ Widget pageTitle(BuildContext context, {@required String title}) {
 //        elevation: 16.0,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Column(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              Image.asset(
-                "assets/img/logo-alt.png",
-                fit: BoxFit.fitHeight,
-                height: 30.0,
-              ),
-
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
+
+                  Image.asset(
+                    "assets/img/logo-alt.png",
+                    fit: BoxFit.fitHeight,
+                    height: 30.0,
+                  ),
                   Text(
                     title,
                     style: Theme.of(context).textTheme.display1.copyWith(
@@ -27,12 +27,14 @@ Widget pageTitle(BuildContext context, {@required String title}) {
                     ),
                   ),
 
-                  Icon(
-                    Icons.attach_money,
-                    color: Theme.of(context).accentColor,
-                  )
+
                 ],
               ),
+
+              Icon(
+                Icons.attach_money,
+                color: Theme.of(context).accentColor,
+              )
             ],
           ),
         ),
