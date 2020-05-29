@@ -11,7 +11,7 @@ Widget pageTitle(BuildContext context, {@required String title}) {
           child: Column(
             children: <Widget>[
               Image.asset(
-                "assets/img/logo.png",
+                "assets/img/logo-alt.png",
                 fit: BoxFit.fitHeight,
                 height: 30.0,
               ),
